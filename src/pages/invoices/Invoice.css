@@ -1,0 +1,179 @@
+.invoice-index{
+    padding: 0 27.2px;
+  }
+  .invoice-index span{
+    font-size: 20px;
+  }
+  .invoice-heading {
+    padding: 10px 0;
+    text-align: center;
+    border: 2px solid #fff;
+  }
+
+  .invoice-headings{
+    width: 100%;
+  }
+
+
+
+  .invoice-heading h1{
+    padding: 0%;
+    margin: 0%;
+  }
+  .invoice-heading p{
+    padding: 0%;
+    margin: 0%;
+  }
+  
+  /* .invoice-body{
+    width:50vw;
+  }
+  
+  .table-invoice  {
+    border: 1px solid #FFFFFF;
+    border-collapse: collapse;
+    width: 80vw;
+  }
+  
+  .table-head{
+    border: 1px solid #FFFFFF;
+    border-collapse: collapse;
+    padding: 1.3vw;
+  }
+  
+  .table-body{
+    border: 1px solid #FFFFFF;
+    border-collapse: collapse;
+    padding: 15px;
+  } */
+  
+  .invoice-body{
+    border: 2px solid #ffffff;
+    padding: 20px;
+  }
+  
+  .invoice-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .invoice-row{
+    display: flex;
+    align-items: center;
+  }
+  
+  /* .invoice-add{
+    display: flex;
+  }
+  
+  .invoice-add span{
+    padding: 0 6px;
+  } */
+  
+  .invoice-row span{
+    padding: 0 6px;
+  }
+  
+  .invoice-row address{
+    padding: 0 6px;
+  }
+  
+  .invoice-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+  }
+  
+  .buy-sell{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .invoice-for{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .form__group {
+    padding: 1px 0 0;
+    margin-top: 1px;
+    /* width: 50%; */
+  }
+  
+  .date-submit{
+    margin-left: 10px;
+    background-color: blue;
+    padding: 10px 10px;
+    border: none;
+    color: #fff;
+  }
+  
+  .form__field {
+    margin-left: 7px;
+    font-family: inherit;
+    width: 100%;
+    color: #fff;
+    border: 0;
+    padding-left: 5px;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    padding: 0px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  
+  .date-invoice{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .date-invoice h1{
+    margin: 0 10px;
+  }
+  
+  .table-data-space{
+    padding-left: 2%;
+    text-align: center;
+  }
+  
+  .date-invoice input{
+    height: 30px;
+    margin-left: 10px;
+  }
+  
+  .sabnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .send-invoice{
+    background-color: rgb(165, 3, 3);
+    border: none;
+    padding: 10px 10px;
+  }
+  
+  .send-invoice a{
+    color: white;
+    text-decoration: none;
+  }

@@ -1,0 +1,794 @@
+/* 
+   
+ Login
+
+*/
+
+.header-div {
+  display: flex;
+  justify-content: end;
+  padding: 1.5% 3%;
+}
+
+.header-button {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: lightblue;
+}
+
+.login-image {
+}
+
+.login-div-image {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.login-main-div {
+  display: flex;
+  flex-direction: column;
+  padding: 6% 3%;
+  margin: 0 35%;
+  background-color: white;
+  /* border: 2px rgb(214, 200, 200) solid; */
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.login-main-header {
+  font-family: "Mate SC";
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 1.5%;
+}
+
+.login-main-headerTwo {
+  font-family: "Mate SC";
+  font-size: 20px;
+  text-align: center;
+}
+
+.login-email {
+  padding: 1.5% 0.5%;
+  font-family: "Mate SC";
+  font-size: 18px;
+}
+
+.login-password {
+  padding: 1.5% 0.5%;
+  font-family: "Mate SC";
+  font-size: 18px;
+}
+
+.login-email-input {
+  height: 40px;
+  border: 1px grey solid;
+  border-radius: 10px;
+  margin-right: 3%;
+  padding-left: 10px;
+}
+
+.space-passord-forgot {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3%;
+}
+
+.login-email-input {
+  height: 40px;
+  border: 1px grey solid;
+  border-radius: 10px;
+  margin-right: 3%;
+}
+
+.login-button {
+  font-family: "Mate SC";
+  margin: 2% 3% 2% 0;
+  border: 2px white solid;
+  height: 40px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+.login-footer {
+  font-family: "Mate SC";
+  display: flex;
+  justify-content: center;
+}
+
+.loading-div {
+  display: flex;
+  justify-content: center;
+  font-family: "Mate SC";
+  margin: 2% 3% 2% 0;
+  padding-top: 3px;
+  border: 2px white solid;
+  height: 40px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+.loading {
+  display: inline-block;
+  background-color: lightblue;
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #000000;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  .login-main-div {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 3%;
+    margin: 0 25%;
+    background-color: white;
+    /* border: 2px rgb(214, 200, 200) solid; */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .login-main-div {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 3%;
+    margin: 0 15%;
+    background-color: white;
+    /* border: 2px rgb(214, 200, 200) solid; */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+}
+
+/*
+
+Forgot Password
+
+*/
+
+.forgot-header-div {
+  display: flex;
+  justify-content: end;
+  padding: 1.5% 3%;
+}
+
+.forgot-header-button {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: lightblue;
+}
+
+.forgot-image {
+}
+
+.forgot-div-image {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.forgot-main-div {
+  display: flex;
+  flex-direction: column;
+  padding: 6% 3%;
+  margin: 0 32%;
+  background-color: white;
+  /* border: 2px rgb(214, 200, 200) solid; */
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.forgot-main-header {
+  font-family: "Mate SC";
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 1.5%;
+}
+
+.forgot-main-headerTwo {
+  font-family: "Mate SC";
+  font-size: 20px;
+  text-align: center;
+}
+
+.forgot-email {
+  padding: 1.5% 0.5%;
+  font-family: "Mate SC";
+  font-size: 18px;
+}
+
+.forgot-email-input {
+  height: 40px;
+  border: 1px grey solid;
+  border-radius: 10px;
+  margin-right: 3%;
+  padding-left: 10px;
+}
+
+.forgot-button {
+  font-family: "Mate SC";
+  margin: 2% 3% 2% 0;
+  border: 2px white solid;
+  height: 40px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+.forgot-footer {
+  font-family: "Mate SC";
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  .forgot-main-div {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 3%;
+    margin: 0 25%;
+    background-color: white;
+    /* border: 2px rgb(214, 200, 200) solid; */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .forgot-main-div {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 3%;
+    margin: 0 15%;
+    background-color: white;
+    /* border: 2px rgb(214, 200, 200) solid; */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+}
+
+/*
+
+Register 
+
+*/
+
+.register-header-div {
+  display: flex;
+  justify-content: end;
+  padding: 1.5% 3%;
+}
+
+.register-header-button {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: lightblue;
+}
+
+.register-image {
+}
+
+.register-div-image {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.register-main-div {
+  display: flex;
+  flex-direction: column;
+  padding: 6% 3%;
+  margin: 0 35%;
+  background-color: white;
+  /* border: 2px rgb(214, 200, 200) solid; */
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.register-main-header {
+  font-family: "Mate SC";
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 1.5%;
+}
+
+.register-main-headerTwo {
+  font-family: "Mate SC";
+  font-size: 20px;
+  text-align: center;
+}
+
+.register-email {
+  padding: 1.5% 0.5%;
+  font-family: "Mate SC";
+  font-size: 18px;
+}
+
+.register-password {
+  padding: 1.5% 0.5%;
+  font-family: "Mate SC";
+  font-size: 18px;
+}
+
+.register-email-input {
+  height: 40px;
+  border: 1px grey solid;
+  border-radius: 10px;
+  margin-right: 3%;
+  padding-left: 10px;
+}
+
+.register-button {
+  font-family: "Mate SC";
+  margin: 2% 3% 2% 0;
+  border: 2px white solid;
+  height: 40px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+.register-footer {
+  font-family: "Mate SC";
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  .register-main-div {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 3%;
+    margin: 0 25%;
+    background-color: white;
+    /* border: 2px rgb(214, 200, 200) solid; */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .register-main-div {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 3%;
+    margin: 0 15%;
+    background-color: white;
+    /* border: 2px rgb(214, 200, 200) solid; */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+}
+
+
+/*
+ 
+   All Employees
+
+*/
+
+.Employees-header-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.employee-button-popup {
+    padding: 10px;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+.popup-header-div {
+    display: flex;
+    justify-content: end;
+}
+
+.Add-employees-mainDiv {
+ display: flex;
+}
+
+.popup-content {
+  margin-top: 20%;
+  background: rgb(255, 255, 255);
+  width: 60%;
+  height: 65Vh;
+  padding: 5px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup='tooltip'].popup-overlay {
+  background: solid;
+}
+
+@keyframes anvil {
+  0% {
+    transform: scale(1) translateY(0px);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+  }
+  1% {
+    transform: scale(0.96) translateY(10px);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+    box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+  }
+}
+.popup-content {
+  -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+}
+
+.addemployee-label {
+  color: #000000;
+  font-family: "Mate SC";
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.add-firstname {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 50%;
+  padding: 20px;
+}
+
+.addemployee-header-name {
+  font-family: "Mate SC";
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 1.5%;
+  color: #000000;
+  text-align: center;
+}
+
+.addemployee-input {
+  height: 40px;
+  border: 1px grey solid;
+  border-radius: 10px;
+  margin-right: 3%;
+  padding-left: 10px;
+  width: 25vw;
+}
+
+.Add-employees-button {
+  font-family: "Mate SC";
+  margin: 2% 3% 2% 0;
+  border: 2px white solid;
+  height: 40px;
+  background-color: lightblue;
+  border-radius: 10px;
+  width: 15vw;
+}
+
+.add-employee-button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.add-employee-loading-div {
+  display: flex;
+  justify-content: center;
+  font-family: "Mate SC";
+  margin: 2% 3% 2% 0;
+  padding-top: 3px;
+  border: 2px white solid;
+  height: 40px;
+  background-color: lightblue;
+  border-radius: 10px;
+  width: 15vw;
+}
+
+
+/* 
+
+Employee table css
+
+*/
+
+table { 
+	width: 80vw; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #3532c0; 
+	}
+
+th { 
+	background: #207fd8; 
+	color: rgb(216, 216, 216); 
+	font-weight: bold; 
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #2108ad; 
+	text-align: left; 
+	font-size: 18px;
+	}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 100%; 
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		/* Label the data */
+		content: attr(data-column);
+		color: #000;
+		font-weight: bold;
+	}
+
+}
+
+
+/*
+
+Profile section
+
+*/
+
+.extra-information-div{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.employee-profile-div {
+  display: flex;
+  padding: 20px;
+}
+
+.employee-profile-pic{
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  margin: 10px;
+}
+
+.employee-information-div {
+  padding-right: 20%;
+  padding-left: 20px;
+  border-left: 2px dashed #eee;
+}
+
+.employee-main-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.personal-information-main-div{
+  width: 38vw;
+  margin: 2% 0 0 2%;
+}
+
+.personal-information-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal-information-nested-div {
+  margin-right: 20%;
+  padding-right: 10%;
+}
+
+/*
+
+ Holiday section
+
+*/
+
+.Holiday-section {
+  margin: 20px;
+}
+
+.my-popup-content {
+  margin: 20% 0 0 0;
+  background: rgb(255, 255, 255);
+  width: 30%;
+  padding: 5px;
+  height: 70vh;
+}
+
+.holiday-popup-heading {
+  color: #000;
+  text-align: center;
+  font-family: "Mate SC";
+}
+
+.holiday-popup-main-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.addholiday-label{
+  text-align: center;
+  color: #000;
+  padding: 1.5% 0.5%;
+  font-family: "Mate SC";
+  font-size: 18px;
+}
+
+.addholiday-input {
+  height: 40px;
+  border: 1px grey solid;
+  border-radius: 10px;
+  margin-right: 3%;
+  padding-left: 10px;
+}
+
+
+/*
+
+Attendance TimeSheet
+
+*/
+
+
+.Attendance-timesheet-heading {
+  padding: 1.5% 0.5%;
+  font-family: "Mate SC";
+  font-size: 25px;
+}
+
+
+.attendance-timesheet-div {
+  width: 35vw;
+  height: 30vh;
+  text-align: center;
+  padding: 4% 0 0 0;
+}
+
+.attendance-timesheet-time {
+  font-family: "Mate SC";
+  font-size: 25px;
+}
+
+.attendence-timesheet-time-padding {
+  padding: 5% 2%;
+}
+
+.attendance-timesheet-button {
+  font-family: "Mate SC";
+  margin: 2% 3% 2% 0;
+  border: 2px white solid;
+  height: 40px;
+  width: 10vw;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+.my-popup-content {
+  
+  position: absolute !important;
+  left: 66vw !important;
+  top: -18vh !important;
+  background: rgb(255, 255, 255);
+  width: 30%;
+  padding: 7px;
+  padding-left:15px !important ;
+  height: 65vh;
+  border-radius: 2vh;
+}
+
+.notfound_data{
+  background-color: rgba(243, 75, 75, 0.938);
+  /* height: 10vh; */
+  width: 40vw;
+  margin-top: 26vh;
+  margin-left: 37vh;
+  color: white;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+.submit_date{
+  background-color: rgba(140, 194, 255, 0.938);
+  /* height: 10vh; */
+  width: 40vw;
+  margin-top: 26vh;
+  margin-left: 37vh;
+  color: white;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+/* 
+Notification
+*/
+
+.notification-popup-content{
+  position: absolute !important;
+  left: 69vw !important;
+  top: -39vh !important;
+  background: rgb(255, 255, 255);
+  width: 30%;
+  padding: 7px;
+  /* height: 65vh; */
+  border-radius: 2vh;
+}
+
+/* vendor */
+#vendor.popup-content{
+  left: 30vw !important;
+}
+
+.add-VendorName{
+  display:'flex';
+
+}
+
